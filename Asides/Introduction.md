@@ -245,3 +245,12 @@ Is a variable actually set ? We can check this by **Operatores** and **Coercion*
 | Boolean(undefined) | False                |
 | Boolean(null)      | False                |
 | Boolean("")        | False                |
+
+## The "||" Operator
+
+Return the first value that can be Coerced to one.
+
+    "hi" || undefined // returns hi
+    "hi" || "hello"   // returns hello
+
+Used to set default values, or used when working with other libs
