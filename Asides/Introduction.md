@@ -254,3 +254,9 @@ Return the first value that can be Coerced to one.
     "hi" || "hello"   // returns hello
 
 Used to set default values, or used when working with other libs
+
+## Objects and the Dot
+
+Objects: collection of name value pairs
+
+![objects](..\images\object.PNG)
