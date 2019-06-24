@@ -72,6 +72,10 @@ Function Expression exist because of first class functions.
     let a = function(){
         // code;
     }()
+
+    (function(){
+        // code;
+    })(Parmeters)
     Isn't put into memory initically, put during execution, and executed immediately
 
 ---
