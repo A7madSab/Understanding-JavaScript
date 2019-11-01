@@ -49,12 +49,17 @@ Variables declared with let and const eliminate this specific issue of hoisting 
 
 - Variables declared with let can be reassigned, but can’t be redeclared in the same scope. Use let when you plan to reassign new values to a variable.
 - Variables declared with const must be assigned an initial value, but can’t be redeclared in the same scope, and can’t be reassigned. Use const when you don’t plan on reassigning new values to a variable.
+- Unlike var let and const can't be redefined.
+- ( const )The referiance to the variable is constant
+    const a = {}
+    a.key = value // Valid
+    a = value // InValid
 
 ## What about var
 
 Is there any reason to use var anymore? Not really.
 
-There are some arguments that can be made for using var in situations where you want to globally define variables, but this is often considered bad practice and should be avoided. From now on, we suggest ditching var in place of using let and const.
+There are some arguments that can be made for using var in situations where you want to globally define variables, but this is often considered bad practice and should be avoided. From now on, we suggest ditching var in place of using let and const. It doesn't protect you from redefining the same variable again.
 
 ## Template Literals
 

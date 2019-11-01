@@ -1,5 +1,25 @@
 # Objects and Funcitons
 
+## Arrow functions
+
+Arrow functions are no longer bound to the `arguments` keyword and the `this` keyword.
+
+Examples that will cause errors
+
+    const add = (a,b) => {
+        console.log(arguments)  // ERROR if you want to use the keyword `arguments` you'll have to stick to
+    }                           // es5 function
+
+    let user = {
+        name: "Ahmad",
+        age: 15,
+        printfunction : () => {
+            console.log(`My name is ${this.name} and I am ${this.age} years old`); // ERROR :
+        }
+    }
+
+---
+
 ## Objects and "." the dot
 
 Can contain:
@@ -44,6 +64,7 @@ _First Class Functions_: this means that anything you can do with objects you ca
 2. Code (Invocable)
 
 You can add properties to a functions
+As functions are objects, they can't have the same name.
 
 ![functionsAreObjects.PNG](..\images\functionsAreObjects.PNG)
 

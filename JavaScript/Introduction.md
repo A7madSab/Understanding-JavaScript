@@ -156,7 +156,13 @@ In this example, function b() has external refrence to the function a()'s contex
 
 ---
 
-## Block Scoping (let)
+## Block Scoping (let and const)
+
+As in most other programing langugues, a variable is only visiable in the block it is defined in, it can't be accessed outside that block. (unlike var which is only function scoping).
+
+---
+
+## function Scoping (var, let and const)
 
 As in most other programing langugues, a variable is only visiable in the block it is defined in, it can't be accessed outside that block.
 
@@ -260,3 +266,29 @@ Used to set default values, or used when working with other libs
 Objects: collection of name value pairs
 
 ![objects](..\images\object.PNG)
+
+## Automatic semi-colon insertion
+
+If you have a `return` with nothing infront of it like this;
+
+    a = () =>{
+        return
+            5;
+    }
+
+JS will Automatic insert a `;` after the return keywork this will mean this function will return nothing. It will look like this:
+
+    a = () =>{
+        return ;
+            5;
+    }
+
+This can be solved by putting some `()` after thr return keywork like this.
+
+    a = () =>{
+        return (
+            5
+        );
+    }
+
+## Comparisons between non-boolean attributes

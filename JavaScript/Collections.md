@@ -2,7 +2,7 @@
 
 ## Arrays
 
-Arrays are dynamical typed so each index can be a differebt type
+Arrays are dynamical typed so each index can be a differe type
 
     let arr1 = new Array();
     arr1.push(1);
