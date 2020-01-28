@@ -1,5 +1,7 @@
 # UI / UX
 
+## UI (user interface)
+
 ## UX (user experiance)
 
 Consists of 3 parts
@@ -20,3 +22,7 @@ Consists of 3 parts
     - Timeline/Deadline
 2. Design
 3. User Testing
+ 
+## Product Designer
+
+More of a manager, work with customer more.

@@ -16,14 +16,23 @@ Result: `https://dummy-server12.herokuapp.com/ | https://git.heroku.com/dummy-se
 
 [ "website" || "git repo" ]
 
-## Push code to git
+## Install dependancies tp create yarn.lock, create deployment branch then Push code to git
 
+yarn install
+git branch deployment
 git init
 git add -A
 git commit -m "initcal commit"
 git remote -v
 git remote add heroku [`repo from above`]
 git push heroku master
+
+## Package.json
+
+"engines": {
+    "node": "12.6.0",
+    "yarn": "1.16.0"
+},
 
 ## Open Project
 

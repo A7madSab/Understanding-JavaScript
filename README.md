@@ -1,6 +1,6 @@
 # Understanding-JavaScript
 
-Will repo will **document** my journy into understanding JS.
+Will repo will **document** my journy into understanding Full Stack Development from Designing to Deployment.
 
 ## Motivation
 
